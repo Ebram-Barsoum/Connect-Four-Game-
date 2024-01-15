@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+
+    <!--Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="cssHub/all.min.css">
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="cssHub/bootstrap.min.css">
+
+    <!-- CSS Main File-->
+    <link rel="stylesheet" href="cssHub/style.css">
+</head>
+<body>
+    
+   <main class="container  d-flex justify-content-center align-items-center">
+        <div class="row m-0 justify-content-center">
+             <div class="title fw-bold fs-1 text-center"> Connect Four</div>
+             <p class="text-center fs-4">Current player : <span id="current-player"></span></p>
+             <div class="game d-flex flex-column justify-content-center p-2 position-relative rounded-top-2">
+                <table class="board">
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td><button type="button"></button></td>
+                        <td ><button type="button"></button></td>
+                    </tr>
+                </table>
+
+                <div class="footer position-absolute d-flex justify-content-center align-items-center">
+                    <div class="middle rounded-pill"></div>
+                </div>
+             </div>
+        </div>
+
+        <div class="row layout m-0 position-fixed bottom-0  w-100 h-100 d-flex justify-content-center align-items-center d-none" id="layout">
+
+            <div class="popUp col-11 col-md-3  p-3 d-flex flex-column justify-content-center align-items-center rounded-3">
+                  <p class="fs-3 fw-bold col" id="msg"></p>
+                  <button class="btn  px-2" id="newGame-btn">New Game</button>
+            </div>
+
+        </div>
+   </main>
+
+    <!--Bootstrap Bundle File-->
+    <script src="jsHub/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js File -->
+    <script type="module" src="jsHub/main.js"></script>
+    <script type="module" src="jsHub/game.js"></script>
+</body>
+</html>

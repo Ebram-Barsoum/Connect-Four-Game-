@@ -1,0 +1,120 @@
+/*********Custon || Classes *********/
+.custom-red{
+    background-color:rgba(255, 0, 0, 0.532) !important;
+}
+
+.custom-yellow{
+    background-color:rgba(255, 255, 0, 0.728) !important;
+}
+
+/*********** App || Style ********/
+body{
+    height: 100dvh;
+    background-color: aliceblue;
+    color:#0077b6;
+}
+
+.game{
+    background-color: #a2d2ff !important;
+    width: fit-content;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+.board button{
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer{
+    height: 70px ;
+    width: 130% ;
+    background-color: #0077b6;
+    top:100%;
+    left:-15%;
+    
+}
+
+.footer::after,.footer::before{
+    content:'';
+    height: 100%;
+    width: 0;
+    border: 60px solid;
+    position: absolute;
+
+}
+
+.footer::after{
+    border-color: transparent aliceblue aliceblue transparent !important;
+    top: 0;
+    right:-1px;
+}
+
+.footer::before{
+    border-color: transparent transparent aliceblue aliceblue !important;
+    top:0;
+    left:-1px;
+}
+
+.middle{
+    height: 50%;
+    width: 80% ;
+    background-color: #a2d2ff !important;
+}
+@media(max-width:768px){
+    button{
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    main.container{
+        height: 100%;
+    }
+    .footer{
+        width: 110%;
+        left:-5%;
+        height: 50px;
+    }
+    .footer::after,.footer::before{
+        border: 30px solid;
+    }
+
+    .middle{
+        width: 70%;
+  
+    }
+}
+@media(max-width:500px){
+    button{
+        height: 35px !important;
+        width: 35px !important;
+    }
+   
+}
+
+/******** PopUp || Part *******/
+.layout{
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.popUp{
+    background-image: url('../images/colorful-confetti-background-with-text-space_1017-32374.jpg') !important;
+    background-position: center;
+    background-size: cover;
+}
+.layout #newGame-btn{
+    width: fit-content !important;
+    height: fit-content !important;
+    background-color: #0077b6;
+    color:#fff;
+}
