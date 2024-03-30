@@ -1,8 +1,8 @@
 'use strict'
 import { game, current_player } from './game.js'
-const playSound = '../audio/play.mp3';
-const winSound = '../audio/win.mp3';
-const gameOverSound = '../audio/gameOver.mp3';
+const playSound = 'audio/play.mp3';
+const winSound = 'audio/win.mp3';
+const gameOverSound = 'audio/gameOver.mp3';
 
 const popupMsg = document.getElementById('msg'),
     layout = document.getElementById('layout');
